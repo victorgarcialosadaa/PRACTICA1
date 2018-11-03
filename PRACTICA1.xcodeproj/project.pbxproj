@@ -14,6 +14,7 @@
 		571C904B218DAC700010DCC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571C9049218DAC700010DCC1 /* LaunchScreen.storyboard */; };
 		571C9056218DAC710010DCC1 /* PRACTICA1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571C9055218DAC710010DCC1 /* PRACTICA1Tests.swift */; };
 		571C9061218DAC710010DCC1 /* PRACTICA1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571C9060218DAC710010DCC1 /* PRACTICA1UITests.swift */; };
+		571C906F218DB9F00010DCC1 /* coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571C906E218DB9F00010DCC1 /* coin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		571C905C218DAC710010DCC1 /* PRACTICA1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PRACTICA1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		571C9060218DAC710010DCC1 /* PRACTICA1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRACTICA1UITests.swift; sourceTree = "<group>"; };
 		571C9062218DAC710010DCC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		571C906E218DB9F00010DCC1 /* coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				571C9047218DAC700010DCC1 /* Assets.xcassets */,
 				571C9049218DAC700010DCC1 /* LaunchScreen.storyboard */,
 				571C904C218DAC700010DCC1 /* Info.plist */,
+				571C906E218DB9F00010DCC1 /* coin.swift */,
 			);
 			path = PRACTICA1;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				571C906F218DB9F00010DCC1 /* coin.swift in Sources */,
 				571C9043218DAC6A0010DCC1 /* ViewController.swift in Sources */,
 				571C9041218DAC6A0010DCC1 /* AppDelegate.swift in Sources */,
 			);
