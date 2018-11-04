@@ -13,7 +13,6 @@ class Coin {
     var value: Decimal
     init(name: String, value: Decimal) {self.name = name
         self.value = value
-        <#statements#>
     }
 
 }

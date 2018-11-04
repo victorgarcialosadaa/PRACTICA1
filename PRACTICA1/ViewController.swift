@@ -9,26 +9,32 @@
 import UIKit
 
 class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
+    
+    var arrayMonedas =  ["Euro", "Libra", "Dolar", "Yen", "Pesos"]
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        <#code#>
+        return 2
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        <#code#>
+        return arrayMonedas.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        <#code#>
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
-        <#code#>
-    }
+        return arrayMonedas[row]    }
     
 
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        print (arrayMonedas[row])
+    }
+    @IBAction func insertNumber(_ sender: Any) {
+    }
+    @IBAction func conversion(_ sender: Any) {return
+    }
     @IBOutlet weak var pickerView: UIPickerView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         pickerView.delegate = self  
         pickerView.dataSource = self
         // Do any additional setup after loading the view, typically from a nib.
