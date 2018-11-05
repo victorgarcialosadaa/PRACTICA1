@@ -7,11 +7,16 @@
 //
 
 import UIKit
-
+import AssetsLibrary
 class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
     
-    var arrayMonedas =  ["Euro", "Libra", "Dolar", "Yen", "Pesos"]
     
+    @IBOutlet weak var imageChange: UIImageView!
+    
+      var arrayMonedas =  ["Euro", "Libra", "Dolar", "Yen", "Pesos"]
+    
+    var flags = ["europe.jpg","america.jpg","uk.jpg","japan.jpg","philipines.jpg"]
+
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 2
     }
@@ -29,12 +34,35 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
     }
     @IBAction func insertNumber(_ sender: Any) {
     }
-    @IBAction func conversion(_ sender: Any) {return
+    @IBAction func btnConvert(_ sender: Any) {return
     }
+    
+  
+    @IBOutlet weak var flagImage: UIImageView!
+    
+    var arrayPosition = 0
+    @IBAction func btnNext(_ sender: Any) {arrayPosition = arrayPosition + 1
+        flagImage.image = UIImage (named: flags[arrayPosition])
+    }
+    
+    @IBAction func btnBack(_ sender: Any) {arrayPosition = arrayPosition + 1
+        flagImage.image = UIImage (named: flags[arrayPosition])    }
+    
+    
     @IBOutlet weak var pickerView: UIPickerView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+    
+            
+            func tableView(tableView: UITableView, numberOfRowsInSection sectio: Int) -> Int {
+                return min(flags.count, flags.count)
+            }
+            
+            
+          
         pickerView.delegate = self  
         pickerView.dataSource = self
         // Do any additional setup after loading the view, typically from a nib.
