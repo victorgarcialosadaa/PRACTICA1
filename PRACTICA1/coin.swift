@@ -10,9 +10,9 @@ import UIKit
 
 class Coin {
     var name: String
-    var value: Decimal
-    init(name: String, value: Decimal) {self.name = name
-        self.value = value
+    var marketValue: Double
+    init(name: String, marketValue: Double) {self.name = name
+        self.marketValue = Double(marketValue)
     }
-
+			
 }

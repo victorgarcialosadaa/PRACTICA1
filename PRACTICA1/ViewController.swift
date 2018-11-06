@@ -13,7 +13,11 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
     
     @IBOutlet weak var imageChange: UIImageView!
     
+    
       var arrayMonedas =  ["Euro", "Libra", "Dolar", "Yen", "Pesos"]
+    var coin1:Coin=(name:"Euro",marketValue:1)
+    var coin2:Coin=(name:"Libra",marketValue:1)
+    
     
     var flags = ["europe.jpg","america.jpg","uk.jpg","japan.jpg","philipines.jpg"]
 
